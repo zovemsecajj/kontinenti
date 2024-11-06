@@ -1,0 +1,92 @@
+body {
+    font-family: "Lexend", sans-serif;
+	font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: normal;
+    background-color: #F3F3FD; 
+    margin: 0;
+    padding: 20px;
+}
+
+#naslov {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+	font-family: "Playwrite GB S", serif;
+	font-weight: <weight>;
+	font-style: normal;
+	
+}
+
+#sadrzaj {
+    width: 60%;
+    margin: 0 auto 30px auto;
+    border-collapse: collapse;
+	text-align: left;
+	background-color: #E6E6FA;
+}
+
+#sadrzaj caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+	text-align: left;
+	color: #6A4C8C;
+}
+
+#sadrzaj td {
+    padding: 8px;
+    text-align: left;
+    font-size: 1em;
+}
+
+#sadrzaj a {
+    color: #6A4C8C;
+    text-decoration: none;
+
+}
+
+#sadrzaj a:hover {
+    text-decoration: underline;
+	font-size:1.1em;
+}
+
+h2 {
+    color: #6A4C8C;
+	font-family: "Playwrite GB S", serif;
+	font-weight: <weight>;
+	font-style: normal;
+    font-size: 1.5em;
+    margin-top: 20px;
+    border-bottom: 5px solid #6A4C8C;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 5px 0;
+	background-color: #E6E6FA;
+}
+
+p {
+	margin-bottom:80px;
+}
+
+label {
+	margin-top: 20px;
+	background-color:#E6E6FA;
+}
+
+h3 {
+	font-size:15px;
+}
+#ime {
+    color: #6A4C8C; 
+}
+

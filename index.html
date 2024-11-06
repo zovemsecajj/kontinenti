@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Početna Stranica</title>
+    <link rel="stylesheet" href="stil.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <form id="language-form">
+        <fieldset>
+            <legend>Kontinenti</legend> 
+            
+            <label for="ime">Ime:</label>
+            <input type="text" id="ime" name="ime" placeholder="Unesite svoje ime" required>
+            
+            <label for="jezik">Jezik:</label>
+            <select id="jezik" name="jezik" required>
+                <option value="">Odaberite jezik...</option>
+                <option value="hr">Hrvatski</option>
+                <option value="en">Engleski</option>
+                <option value="es">Španjolski</option>
+            </select>
+            
+            <button type="button" onclick="redirect()">GOTOVO</button>
+        </fieldset>
+    </form>
+
+    <script>
+        function redirect() {
+            const ime = document.getElementById('ime').value;
+            const jezik = document.getElementById('jezik').value;
+
+            if (ime && jezik) {
+                if (jezik === 'hr') {
+                    window.location.href = "hrv.html";
+                } else if (jezik === 'en') {
+                    window.location.href = "eng.html";
+                } else if (jezik === 'es') {
+                    window.location.href = "esp.html";
+                }
+            } else {
+                alert("Molimo unesite ime i odaberite jezik.");
+            }
+        }
+    </script>
+
+</body>
+</html>
